@@ -1,0 +1,35 @@
+﻿@model CRUDStoreProcedure.Models.CustomerEntity
+
+
+
+<div class="row">
+
+    <div class="col-md-5">
+
+        <form method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile" class="control-label"></label>
+                <input asp-for="Mobile" class="form-control" />
+                <span asp-validation-for="Mobile"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary w-25" />
+               
+                <input asp-action="index" value="back" class="btn btn-primary w-25" />
+
+            </div>
+        </form>
+
+    </div>
+</div>
